@@ -10,6 +10,7 @@ body {
     align-items: center;
     height: 100vh;
     background-color: hsl(0, 0%, 95%);
+    margin-inline: 2%;
 }
 
 #calculator {
@@ -19,6 +20,7 @@ body {
     max-width: 500px;
     overflow: hidden;
 }
+
 #display {
     width: 100%;
     padding: 20px;
@@ -38,6 +40,9 @@ body {
 }
 
 button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 70px;
     height: 70px;
     border-radius: 50px;
