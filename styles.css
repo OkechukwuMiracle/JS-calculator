@@ -22,12 +22,16 @@ body {
 }
 
 #display {
-    width: 100%;
-    padding: 20px;
-    font-size: 5rem;
+    width: 90%;
+    height: 15vh;
+    padding-left: 20px;
+    font-size: 4rem;
     text-align: left;
     border: none;
-    background-color: hsl(0, 0%, 20%);
+    border-radius: 15px;
+    margin: 3% 0 0 5%;
+    /* background-color: hsl(0, 0%, 20%); */
+    background-color: gray;
     color: white;
 }
 
@@ -73,10 +77,20 @@ button:active {
     background-color: hsl(35, 100%, 75%);
 }
 
+body.light {
+    background-color: black;
+}
+
+body.light #calculator {
+    background-color: white;
+}
 
 /* MEDIA QUERY FROM 530px - 330px */
 
 @media screen and (max-width: 530px) {
+    body {
+        flex-direction: column-reverse  ;
+    }
     #display {
         font-size: 3rem;
     }

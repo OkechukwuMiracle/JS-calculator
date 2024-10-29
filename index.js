@@ -18,3 +18,9 @@ function calculate() {
         display.value = 'syntax error';
     }
 }
+
+document.getElementById('light').addEventListener('click', toggleLight);
+
+function toggleLight() {
+    document.body.classList.toggle('light');
+}
